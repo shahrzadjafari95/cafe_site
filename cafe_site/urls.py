@@ -1,5 +1,5 @@
-from django.urls import path
 from cafe_site import views
 
 
+app_name = 'cafe_site'
 
