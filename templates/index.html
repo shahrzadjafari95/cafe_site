@@ -1,340 +1,157 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-
-    <section class="banner">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3">
-                    <h4>Here you can find delecious foods</h4>
-                    <h2>Asian Restaurant</h2>
-                    <p>Quisque nec nibh id lacus fringilla eleifend sed sit amet sem. Donec lectus odio, mollis a nisl non, tempor interdum nisl.</p>
-                    <div class="primary-button">
-                        <a href="#" class="scroll-link" data-id="book-table">Order Right Now</a>
-                    </div>
-                </div>
-            </div>
+    <section class="tm-welcome-section">
+      <div class="container tm-position-relative">
+        <div class="tm-lights-container">
+          <img src="{% static 'img/light.png' %}" alt="Light" class="light light-1">
+          <img src="{% static 'img/light.png' %}" alt="Light" class="light light-2">
+          <img src="{% static 'img/light.png' %}" alt="Light" class="light light-3">
         </div>
-    </section>
-
-
-
-    <section class="cook-delecious">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-md-offset-1">
-                    <div class="first-image">
-                        <img src="{% static 'img/cook_01.jpg' %}" alt="">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="cook-content">
-                        <h4>We cook delecious</h4>
-                        <div class="contact-content">
-                            <span>You can call us on:</span>
-                            <h6>+ 1234 567 8910</h6>
-                        </div>
-                        <span>or</span>
-                        <div class="primary-white-button">
-                            <a href="#" class="scroll-link" data-id="book-table">Order Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="second-image">
-                        <img src="{% static 'img/cook_02.jpg' %}" alt="">
-                    </div>
-                </div>
-            </div>
+        <div class="row tm-welcome-content">
+          <h2 class="white-text tm-handwriting-font tm-welcome-header"><img src="{% static 'img/header-line.png' %}" alt="Line" class="tm-header-line">&nbsp;Welcome To&nbsp;&nbsp;<img src="{% static 'img/header-line.png' %}" alt="Line" class="tm-header-line"></h2>
+          <h2 class="gold-text tm-welcome-header-2">Cafe House</h2>
+          <p class="gray-text tm-welcome-description">Cafe House template is a mobile-friendly responsive <span class="gold-text">Bootstrap v3.3.5</span> layout by <span class="gold-text">templatemo</span>. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculusnec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+          <a href="#main" class="tm-more-button tm-more-button-welcome">Details</a>
         </div>
+        <img src="{% static 'img/table-set.png' %}" alt="Table Set" class="tm-table-set img-responsive">
+      </div>
     </section>
-
-
-
-    <section class="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="service-item">
-                        <a href="{% url 'menu:menu' %}">
-                        <img src="{% static 'img/cook_breakfast.png' %}" alt="Breakfast">
-                        <h4>Breakfast</h4>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="service-item">
-                        <a href="{% url 'menu:menu' %}">
-                        <img src="{% static 'img/cook_lunch.png' %}" alt="Lunch">
-                        <h4>Lunch</h4>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="service-item">
-                        <a href="{% url 'menu:menu' %}">
-                        <img src="{% static 'img/cook_dinner.png' %}" alt="Dinner">
-                        <h4>Dinner</h4>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="service-item">
-                        <a href="{% url 'menu:menu' %}">
-                        <img src="{% static 'img/cook_dessert.png' %}" alt="Desserts">
-                        <h4>Desserts</h4>
-                        </a>
-                    </div>
-                </div>
+    <div class="tm-main-section light-gray-bg">
+      <div class="container" id="main">
+        <section class="tm-section row">
+          <div class="col-lg-9 col-md-9 col-sm-8">
+            <h2 class="tm-section-header gold-text tm-handwriting-font">The Best Coffee for you</h2>
+            <h2>Cafe House</h2>
+            <p class="tm-welcome-description">This is free HTML5 website template from <span class="blue-text">template</span><span class="green-text">mo</span>. Fndimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Ettiam sit amet orci eget eros faucibus tincidunt.</p>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-4 tm-welcome-img-container">
+            <div class="inline-block shadow-img">
+              <img src="{% static 'img/1.jpg' %}" alt="Image" class="img-circle img-thumbnail">
             </div>
-        </div>
-    </section>
-
-
-
-    <section id="book-table">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="heading">
-                        <h2>Book Your Table Now</h2>
-                    </div>
+          </div>
+        </section>
+        <section class="tm-section tm-section-margin-bottom-0 row">
+          <div class="col-lg-12 tm-section-header-container">
+            <h2 class="tm-section-header gold-text tm-handwriting-font"><img src="{% static 'img/logo.png' %}" alt="Logo" class="tm-site-logo"> Popular Items</h2>
+            <div class="tm-hr-container"><hr class="tm-hr"></div>
+          </div>
+          <div class="col-lg-12 tm-popular-items-container">
+            <div class="tm-popular-item">
+              <img src="{% static 'img/popular-1.jpg' %}" alt="Popular" class="tm-popular-item-img">
+              <div class="tm-popular-item-description">
+                <h3 class="tm-handwriting-font tm-popular-item-title"><span class="tm-handwriting-font bigger-first-letter">a</span>mericano</h3><hr class="tm-popular-item-hr">
+                <p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque. sed ipsum.</p>
+                <div class="order-now-container">
+                  <a href="#" class="order-now-link tm-handwriting-font"></a>
                 </div>
-                <div class="col-md-4 col-md-offset-2 col-sm-12">
-                    <div class="left-image">
-                        <img src="{% static 'img/book_left_image.jpg' %}" alt="">
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <div class="right-info">
-                        <h4>Reservation</h4>
-                        <form id="form-submit" action="" method="get">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <fieldset>
-                                        <select required name='day' onchange='this.form.()'>
-                                            <option value="">Select day</option>
-                                            <option value="Monday">Monday</option>
-                                            <option value="Tuesday">Tuesday</option>
-                                            <option value="Wednesday">Wednesday</option>
-                                            <option value="Thursday">Thursday</option>
-                                            <option value="Friday">Friday</option>
-                                            <option value="Saturday">Saturday</option>
-                                            <option value="Sunday">Sunday</option>
-                                        </select>
-                                    </fieldset>
-                                </div>
-                                <div class="col-md-6">
-                                    <fieldset>
-                                        <select required name='hour' onchange='this.form.()'>
-                                            <option value="">Select hour</option>
-                                            <option value="10-00">10:00</option>
-                                            <option value="12-00">12:00</option>
-                                            <option value="14-00">14:00</option>
-                                            <option value="16-00">16:00</option>
-                                            <option value="18-00">18:00</option>
-                                            <option value="20-00">20:00</option>
-                                            <option value="22-00">22:00</option>
-                                        </select>
-                                    </fieldset>
-                                </div>
-                                <div class="col-md-6">
-                                    <fieldset>
-                                        <input name="name" type="name" class="form-control" id="name" placeholder="Full name" required="">
-                                    </fieldset>
-                                </div>
-                                <div class="col-md-6">
-                                    <fieldset>
-                                        <input name="phone" type="phone" class="form-control" id="phone" placeholder="Phone number" required="">
-                                    </fieldset>
-                                </div>
-                                <div class="col-md-6">
-                                    <fieldset>
-                                        <select required class="person" name='persons' onchange='this.form.()'>
-                                            <option value="">How many persons?</option>
-                                            <option value="1-Person">1 Person</option>
-                                            <option value="2-Persons">2 Persons</option>
-                                            <option value="3-Persons">3 Persons</option>
-                                            <option value="4-Persons">4 Persons</option>
-                                            <option value="5-Persons">5 Persons</option>
-                                            <option value="6-Persons">6 Persons</option>
-                                        </select>
-                                    </fieldset>
-                                </div>
-                                <div class="col-md-6">
-                                    <fieldset>
-                                        <button type="submit" id="form-submit" class="btn">Book Table</button>
-                                    </fieldset>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+              </div>
             </div>
-        </div>
-    </section>
-
-
-
-    <section class="get-app">
-        <div class="container">
-            <div class="row">
-                <div class="heading">
-                    <h2>Get application for your phone</h2>
+            <div class="tm-popular-item">
+              <img src="{% static 'img/popular-2.jpg' %}" alt="Popular" class="tm-popular-item-img">
+              <div class="tm-popular-item-description">
+                <h3 class="tm-handwriting-font tm-popular-item-title"><span class="tm-handwriting-font bigger-first-letter">c</span>appuccino</h3><hr class="tm-popular-item-hr">
+                <p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque. sed ipsum.</p>
+                <div class="order-now-container">
+                  <a href="#" class="order-now-link tm-handwriting-font"></a>
                 </div>
-                <div class="primary-white-button">
-                    <a href="#">Download now</a>
-                </div>
+              </div>
             </div>
-        </div>
-    </section>
-
-
-
-    <section class="featured-food">
-        <div class="container">
-            <div class="row">
-                <div class="heading">
-                    <h2>Weekly Featured Food</h2>
+            <div class="tm-popular-item">
+              <img src="{% static 'img/popular-3.jpg' %}" alt="Popular" class="tm-popular-item-img">
+              <div class="tm-popular-item-description">
+                <h3 class="tm-handwriting-font tm-popular-item-title"><span class="tm-handwriting-font bigger-first-letter">m</span>ocha</h3><hr class="tm-popular-item-hr">
+                <p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque. sed ipsum.</p>
+                <div class="order-now-container">
+                  <a href="#" class="order-now-link tm-handwriting-font"></a>
                 </div>
+              </div>
             </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="food-item">
-                        <h2>Breakfast</h2>
-                        <img src="{% static 'img/breakfast_item.jpg' %}" alt="">
-                        <div class="price">$4.50</div>
-                        <div class="text-content">
-                            <h4>Kale Chips Art Party</h4>
-                            <p>Dreamcatcher squid ennui cliche chicharros nes echo  small batch jean shorts hexagon street art knausgaard wolf...</p>
-                        </div>
+          </div>
+        </section>
+        <section class="tm-section row">
+          <div class="col-lg-12 tm-section-header-container">
+            <h2 class="tm-section-header gold-text tm-handwriting-font"><img src="{% static 'img/logo.png' %}" alt="Logo" class="tm-site-logo"> Today's Special</h2>
+            <div class="tm-hr-container"><hr class="tm-hr"></div>
+          </div>
+          <div class="col-lg-12 tm-special-container margin-top-60">
+            <div class="tm-special-container-left"> <!-- left -->
+              <div class="tm-special-item">
+                <div class="tm-special-img-container">
+                  <img src="{% static 'img/special-1.jpg' %}" alt="Special" class="tm-special-img img-responsive">
+                    <div class="tm-special-description">
+                      <h3 class="tm-special-title">Donec pede justo</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="food-item">
-                        <h2>Lunch</h2>
-                        <img src="{% static 'img/lunch_item.jpg' %}" alt="">
-                        <div class="price">$7.50</div>
-                        <div class="text-content">
-                            <h4>Taiyaki Gastro Tousled</h4>
-                            <p>Dreamcatcher squid ennui cliche chicharros nes echo  small batch jean shorts hexagon street art knausgaard wolf...</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="food-item">
-                        <h2>Dinner</h2>
-                        <img src="{% static 'img/dinner_item.jpg' %}" alt="">
-                        <div class="price">$12.50</div>
-                        <div class="text-content">
-                            <h4>Batch Squid Jean Shorts</h4>
-                            <p>Dreamcatcher squid ennui cliche chicharros nes echo  small batch jean shorts hexagon street art knausgaard wolf...</p>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </div>
-    </section>
+            <div class="tm-special-container-right"> <!-- right -->
+              <div>
+                <div class="tm-special-item">
+                  <div class="tm-special-img-container">
+                    <img src="{% static 'img/special-2.jpg' %}" alt="Special" class="img-responsive">
 
+                      <div class="tm-special-description">
+                        <h3 class="tm-special-title">Etiam sit amet</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                      </div>
 
-
-    <section class="our-blog">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="heading">
-                        <h2>Our blog post</h2>
-                    </div>
+                  </div>
                 </div>
+              </div>
+              <div class="tm-special-container-lower">
+                <div class="tm-special-item">
+                  <div class="tm-special-img-container">
+                    <img src="{% static 'img/special-3.jpg' %}" alt="Special" class="img-responsive">
+
+                      <div class="tm-special-description">
+                        <p>Vivamus elementum</p>
+                      </div>
+
+                  </div>
+                </div>
+                <div class="tm-special-item">
+                  <div class="tm-special-img-container">
+                    <img src="{% static 'img/special-4.jpg' %}" alt="Special" class="img-responsive">
+
+                      <div class="tm-special-description">
+                        <p>Quisque rutrum.</p>
+                      </div>
+
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="blog-post">
-                        <img src="{% static 'img/blog_post_01.jpg' %}" alt="">
-                        <div class="date">26 Oct 2020</div>
-                        <div class="right-content">
-                            <h4>Stumptown Tofu Schlitz</h4>
-                            <span>Branding / Admin</span>
-                            <p>Skateboard iceland twee tofu shaman crucifix vice before they sold out corn hole occupy drinking vinegar chambra meggings kale chips hexagon...</p>
-                            <div class="text-button">
-                                <a href="#">Continue Reading</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="blog-post">
-                        <img src="{% static 'img/blog_post_02.jpg' %}" alt="">
-                        <div class="date">21 Oct 2020</div>
-                        <div class="right-content">
-                            <h4>Succulents Hashtag Folk</h4>
-                            <span>Branding / Admin</span>
-                            <p>Skateboard iceland twee tofu shaman crucifix vice before they sold out corn hole occupy drinking vinegar chambra meggings kale chips hexagon...</p>
-                            <div class="text-button">
-                                <a href="#">Continue Reading</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="blog-post">
-                        <img src="{% static 'img/blog_post_03.jpg' %}" alt="">
-                        <div class="date">11 Oct 2020</div>
-                        <div class="right-content">
-                            <h4>Knaus Sriracha Pinterest</h4>
-                            <span>Dessert / Chef</span>
-                            <p>Skateboard iceland twee tofu shaman crucifix vice before they sold out corn hole occupy drinking vinegar chambra meggings kale chips hexagon...</p>
-                            <div class="text-button">
-                                <a href="#">Continue Reading</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="blog-post">
-                        <img src="{% static 'img/blog_post_04.jpg' %}" alt="">
-                        <div class="date">03 Oct 2020</div>
-                        <div class="right-content">
-                            <h4>Crucifix Selvage Coat</h4>
-                            <span>Plate / Chef</span>
-                            <p>Skateboard iceland twee tofu shaman crucifix vice before they sold out corn hole occupy drinking vinegar chambra meggings kale chips hexagon...</p>
-                            <div class="text-button">
-                                <a href="#">Continue Reading</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          </div>
+        </section>
+        <section class="tm-section">
+          <div class="row">
+            <div class="col-lg-12 tm-section-header-container">
+              <h2 class="tm-section-header gold-text tm-handwriting-font"><img src="{% static 'img/logo.png' %}" alt="Logo" class="tm-site-logo"> Daily Menu</h2>
+              <div class="tm-hr-container"><hr class="tm-hr"></div>
             </div>
-        </div>
-    </section>
-
-
-
-    <section class="sign-up">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="heading">
-                        <h2>Signup for our newsletters</h2>
-                    </div>
-                </div>
+          </div>
+          <div class="row">
+            <div class="tm-daily-menu-container margin-top-60">
+              <div class="col-lg-4 col-md-4">
+                <img src="{% static 'img/menu-board.png' %}" alt="Menu board" class="tm-daily-menu-img">
+              </div>            
+              <div class="col-lg-8 col-md-8">
+                <p>Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.</p>
+                <ol class="margin-top-30">
+                  <li>Tellus eget condimentum rhoncus.</li> 
+                  <li>Sem quam semper libero.</li>
+                  <li>Sit amet adipiscing sem neque sed ipsum.</li> 
+                  <li>Nam quam nunc, blandit vel, luctus pulvinar.</li> 
+                  <li>Maecenas nec odio et ante tincidunt tempus.</li> 
+                  <li>Donec vitae sapien ut libero ventenatis faucibus.</li> 
+                </ol>
+                <a href="{% url 'menu:menu' %}" class="tm-more-button margin-top-30">Read More</a>
+              </div>
             </div>
-            <form id="contact" action="" method="get">
-                <div class="row">
-                    <div class="col-md-4 col-md-offset-3">
-                        <fieldset>
-                            <input name="email" type="text" class="form-control" id="email" placeholder="Enter your email here..." required="">
-                        </fieldset>
-                    </div>
-                    <div class="col-md-2">
-                        <fieldset>
-                            <button type="submit" id="form-submit" class="btn">Send Message</button>
-                        </fieldset>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </section>
-
-
+          </div>          
+        </section>
+      </div>
+    </div> 
 {% endblock %}
