@@ -10,4 +10,9 @@ class MenuAdmin(admin.ModelAdmin):
     date_hierarchy = 'created_date'
     empty_value_display = '-empty-'
 
+
+class CategoryAdmin(admin.ModelAdmin):
+    list_display = ['name', 'id']
+    list_filter = ['name']
+
 admin.site.register(Menu, MenuAdmin)
