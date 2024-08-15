@@ -19,3 +19,6 @@ class Menu(models.Model):
     created_date = models.DateTimeField(auto_now_add=True)
     update_date = models.DateTimeField(auto_now=True)
     published_date = models.DateTimeField(null=True)
+
+    class Meta:
+        ordering = ['-created_date']
