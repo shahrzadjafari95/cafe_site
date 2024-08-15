@@ -10,3 +10,7 @@ class Category(models.Model):
 
 
 class Menu(models.Model):
+    # image = models.ImageField()
+    title = models.CharField(max_length=255)
+    price = models.CharField(max_length=255)
+    content = models.TextField()
