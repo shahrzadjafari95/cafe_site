@@ -15,4 +15,6 @@ class CategoryAdmin(admin.ModelAdmin):
     list_display = ['name', 'id']
     list_filter = ['name']
 
+
+admin.site.register(Category, CategoryAdmin)
 admin.site.register(Menu, MenuAdmin)
