@@ -15,3 +15,7 @@ class Menu(models.Model):
     price = models.CharField(max_length=255)
     content = models.TextField()
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
+    status = models.BooleanField(default=False)
+    created_date = models.DateTimeField(auto_now_add=True)
+    update_date = models.DateTimeField(auto_now=True)
+    published_date = models.DateTimeField(null=True)
