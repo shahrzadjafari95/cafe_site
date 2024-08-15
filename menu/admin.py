@@ -10,3 +10,4 @@ class MenuAdmin(admin.ModelAdmin):
     date_hierarchy = 'created_date'
     empty_value_display = '-empty-'
 
+admin.site.register(Menu, MenuAdmin)
