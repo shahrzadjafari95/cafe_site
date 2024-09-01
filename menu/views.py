@@ -14,3 +14,5 @@ def index(request):
         'name')
     # Filter out categories that don't have any available products
     categories_with_products = [category for category in categories if category.products.exists()]
+    # Pass the filtered categories to the template
+    context = {'categories': categories_with_products, 'all_categories': categories}
