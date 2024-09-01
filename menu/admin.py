@@ -1,12 +1,19 @@
 from django.contrib import admin
 from menu.models import Product, Category
 from django_admin_listfilter_dropdown.filters import RelatedDropdownFilter, DropdownFilter
+from django_admin_filters import MultiChoice
 
 
 # Register your models here.
+
+class StatusFilter(MultiChoice):
+    FILTER_LABEL = "By status"
+
+
 class ProductAdmin(admin.ModelAdmin):
     list_display = ['name', 'price', 'category', 'status', 'created_date', 'published_date']
     list_filter = [('category', RelatedDropdownFilter),
+                   ('status', StatusFilter),
     search_fields = ['price', 'content', 'name']
     date_hierarchy = 'created_date'
     empty_value_display = '-empty-'

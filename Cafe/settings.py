@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'cafe_site',
     'menu',
     'django_admin_listfilter_dropdown',
+    'django_admin_filters',
 
 ]
 
