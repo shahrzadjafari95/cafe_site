@@ -23,7 +23,7 @@ class ProductAdmin(admin.ModelAdmin):
 
 class CategoryAdmin(admin.ModelAdmin):
     list_display = ['name', 'id']
-    list_filter = ['name']
+    list_filter = [('name', DropdownFilter)]
 
 
 admin.site.register(Category, CategoryAdmin)
