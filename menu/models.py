@@ -9,9 +9,9 @@ class Category(models.Model):
         return self.name
 
 
-class Menu(models.Model):
     # image = models.ImageField()
     title = models.CharField(max_length=255)
+class Product(models.Model):
     price = models.CharField(max_length=255)
     content = models.TextField()
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
