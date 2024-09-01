@@ -1,4 +1,7 @@
 from django.db import models
+from PIL import Image
+from io import BytesIO
+from django.core.files.base import ContentFile
 
 
 # Create your models here.
@@ -24,6 +27,20 @@ class Product(models.Model):
     created_date = models.DateTimeField(auto_now_add=True)
     update_date = models.DateTimeField(auto_now=True)
     published_date = models.DateTimeField(null=True)
+
+    def save(self, *args, **kwargs):
+        # Call the original save method to save the image first
+        super().save(*args, **kwargs)
+
+        img = Image.open(self.image.path)
+
+        # Set a uniform size for all images
+        desired_size = (136, 136)  # Set your desired size here
+
+        # Resize the image while maintaining aspect ratio
+        img = img.resize(desired_size)
+
+        img.save(self.image.path)
 
     class Meta:
         ordering = ['-created_date']
