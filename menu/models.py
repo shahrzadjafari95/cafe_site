@@ -9,9 +9,9 @@ class Category(models.Model):
         return self.name
 
 
-    title = models.CharField(max_length=255)
 class Product(models.Model):
     image = models.ImageField(upload_to='menu/', null=True, blank=True)
+    name = models.CharField(max_length=255)
     price = models.CharField(max_length=255)
     content = models.TextField()
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
