@@ -1,11 +1,12 @@
 from django.contrib import admin
 from menu.models import Product, Category
+from django_admin_listfilter_dropdown.filters import RelatedDropdownFilter, DropdownFilter
 
 
 # Register your models here.
-    list_filter = ['category', 'status', 'created_date']
 class ProductAdmin(admin.ModelAdmin):
     list_display = ['name', 'price', 'category', 'status', 'created_date', 'published_date']
+    list_filter = [('category', RelatedDropdownFilter),
     search_fields = ['price', 'content', 'name']
     date_hierarchy = 'created_date'
     empty_value_display = '-empty-'
