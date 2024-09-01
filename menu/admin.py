@@ -27,4 +27,4 @@ class CategoryAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Category, CategoryAdmin)
-admin.site.register(Menu, MenuAdmin)
+admin.site.register(Product, ProductAdmin)
