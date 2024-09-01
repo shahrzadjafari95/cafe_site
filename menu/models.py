@@ -19,7 +19,7 @@ class Product(models.Model):
     name = models.CharField(max_length=255)
     price = models.CharField(max_length=255)
     content = models.TextField()
-    category = models.ForeignKey(Category, on_delete=models.CASCADE)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='products')
     status = models.CharField(max_length=50, default='coming_soon', choices=STATUS_CHOICES)
     created_date = models.DateTimeField(auto_now_add=True)
     update_date = models.DateTimeField(auto_now=True)
