@@ -10,12 +10,17 @@ class Category(models.Model):
 
 
 class Product(models.Model):
+    #  define status choices for status field in model
+    STATUS_CHOICES = [
+        ('available', 'Available'),
+        ('sold_out', 'Sold Out'),
+        ('coming_soon', 'Coming Soon')]
     image = models.ImageField(upload_to='menu/', null=True, blank=True)
     name = models.CharField(max_length=255)
     price = models.CharField(max_length=255)
     content = models.TextField()
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
-    status = models.BooleanField(default=False)
+    status = models.CharField(max_length=50, default='coming_soon', choices=STATUS_CHOICES)
     created_date = models.DateTimeField(auto_now_add=True)
     update_date = models.DateTimeField(auto_now=True)
     published_date = models.DateTimeField(null=True)
