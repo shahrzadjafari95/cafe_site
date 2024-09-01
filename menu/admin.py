@@ -1,5 +1,5 @@
 from django.contrib import admin
-from menu.models import Menu, Category
+from menu.models import Product, Category
 
 
 # Register your models here.
