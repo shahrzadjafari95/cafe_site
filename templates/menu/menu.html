@@ -53,9 +53,11 @@
             <div class="tm-menu-product-content col-lg-9 col-md-9"> <!-- menu content -->
             {% for category in categories %}
                 <div class="tm-product">
+                    <section id="{{ category.name|slugify }}">
                     <div class="tm-product-text">
                         <h3 class="tm-product-title">{{ category.name }}</h3>
                     </div>
+                    </section>
                 </div>
             {% for product in category.products.all %}
               <div class="tm-product">
