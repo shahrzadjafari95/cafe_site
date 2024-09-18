@@ -43,7 +43,7 @@
                 <nav class="tm-side-menu">
                   {% for category in all_categories %}
                   <ul>
-                    <li><a href="#" class="active">{{category.name}}</a></li>
+                    <li><a href="#{{ category.name|slugify }}" class="active">{{category.name}}</a></li>
                   </ul>
                   {% endfor %}
                 </nav>    
