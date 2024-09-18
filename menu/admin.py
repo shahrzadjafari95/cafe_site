@@ -12,6 +12,7 @@ class StatusFilter(MultiChoice):
 
 
 class ProductAdmin(admin.ModelAdmin):
+    ordering = ['name']
     list_display = ['name', 'price', 'category', 'status', 'created_date', 'published_date']
     list_filter = [('category', RelatedDropdownFilter),
                    ('status', StatusFilter),
