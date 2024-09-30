@@ -165,3 +165,5 @@ media/
 *.webp
 cafe_site/migrations
 menu/migrations
+statics/
+
