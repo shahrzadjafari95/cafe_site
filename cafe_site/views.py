@@ -14,6 +14,9 @@ def contact(request):
         if form.is_valid():
             form.save()
             messages.success(request, 'Your message has been sent successfully!')
+        else:
+            messages.error(request, 'There was an error sending your message.')
+
     return render(request, 'contact.html')
 
 
