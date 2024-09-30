@@ -1,5 +1,6 @@
 from django.contrib import messages
 from django.shortcuts import render
+from cafe_site.forms import ContactForm
 
 
 # Create your views here.
