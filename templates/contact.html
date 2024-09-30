@@ -11,6 +11,12 @@
     </div>
 
     <!-- Hidden Div for Django Messages -->
+    <div id="popup-messages" style="display: none;">
+        {% if messages %}
+            {% for message in messages %}
+                <p class="{{ message.tags }}">{{ message }}</p>
+            {% endfor %}
+        {% endif %}
     </div>
     <section class="tm-welcome-section">
       <div class="container tm-position-relative">
