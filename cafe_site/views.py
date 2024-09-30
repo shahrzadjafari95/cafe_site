@@ -11,6 +11,7 @@ def index(request):
 def contact(request):
     if request.method == "POST":
         form = ContactForm(request.POST)
+        if form.is_valid():
     return render(request, 'contact.html')
 
 
