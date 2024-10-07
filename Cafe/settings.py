@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django_admin_listfilter_dropdown',
     'rangefilter',
     'django_admin_filters',
+    'captcha',
 
 ]
 
