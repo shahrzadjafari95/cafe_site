@@ -25,6 +25,7 @@ urlpatterns = [
     # path('blog/', include('blog.urls')),
     path('menu/', include('menu.urls')),
 
+    path('captcha/', include('captcha.urls')),
 ]
 
 
