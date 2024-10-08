@@ -20,6 +20,8 @@ from django.contrib import admin
 from django.urls import path, include
 from cafe_site.sitemaps import StaticViewSitemap
 from  menu.sitemaps import MenuSitemap
+from django.contrib.sitemaps.views import sitemap
+
 sitemaps = {
     "static": StaticViewSitemap,
     "menu": MenuSitemap,
@@ -32,6 +34,7 @@ urlpatterns = [
     path('menu/', include('menu.urls')),
     path('captcha/', include('captcha.urls')),
     path('summernote/', include('django_summernote.urls')),
+    path("sitemap.xml", sitemap, {"sitemaps": sitemaps}, name="django.contrib.sitemaps.views.sitemap"),
 ]
 
 
