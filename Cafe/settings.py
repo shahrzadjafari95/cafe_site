@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'captcha',
     'django_summernote',
     'django_extensions',
+    'django.contrib.sites',
 
 # summernote setting
 SUMMERNOTE_THEME = 'bs4'  # Show summernote with Bootstrap4
