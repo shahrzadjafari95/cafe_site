@@ -45,6 +45,9 @@ INSTALLED_APPS = [
     'django_extensions',
     'django.contrib.sites',
     'django.contrib.sitemaps',
+# site map setting
+SITE_ID = 2
+
 
 # summernote setting
 SUMMERNOTE_THEME = 'bs4'  # Show summernote with Bootstrap4
