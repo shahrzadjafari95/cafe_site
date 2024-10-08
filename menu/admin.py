@@ -12,7 +12,7 @@ class StatusFilter(MultiChoice):
     FILTER_LABEL = "By status"
 
 
-class ProductAdmin(admin.ModelAdmin):
+class ProductAdmin(SummernoteModelAdmin):
     ordering = ['name']
     list_display = ['name', 'price', 'category', 'status', 'created_date', 'published_date']
     list_filter = [('category', RelatedDropdownFilter),
