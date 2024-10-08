@@ -45,6 +45,10 @@ INSTALLED_APPS = [
 
 # summernote setting
 SUMMERNOTE_THEME = 'bs4'  # Show summernote with Bootstrap4
+
+SUMMERNOTE_CONFIG = {
+    # Using SummernoteWidget - iframe mode, default
+    'iframe': True,
 ]
 
 MIDDLEWARE = [
