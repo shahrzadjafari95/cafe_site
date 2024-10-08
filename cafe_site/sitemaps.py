@@ -7,3 +7,5 @@ class StaticViewSitemap(sitemaps.Sitemap):
     changefreq = "daily"
 
     def items(self):
+        return ["cafe_site:home", "cafe_site:about", "cafe_site:contact"]
+
