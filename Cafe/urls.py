@@ -30,7 +30,6 @@ sitemaps = {
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('cafe_site.urls')),
-    # path('blog/', include('blog.urls')),
     path('menu/', include('menu.urls')),
     path('captcha/', include('captcha.urls')),
     path('summernote/', include('django_summernote.urls')),
