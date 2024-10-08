@@ -50,6 +50,7 @@ INSTALLED_APPS = [
 SITE_ID = 2
 
 # robots setting
+ROBOTS_USE_SITEMAP = True
 
 # summernote setting
 SUMMERNOTE_THEME = 'bs4'  # Show summernote with Bootstrap4
