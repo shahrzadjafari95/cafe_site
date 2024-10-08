@@ -13,6 +13,7 @@ class StatusFilter(MultiChoice):
 
 
 class ProductAdmin(SummernoteModelAdmin):
+    summernote_fields = ('content',)
     ordering = ['name']
     list_display = ['name', 'price', 'category', 'status', 'created_date', 'published_date']
     list_filter = [('category', RelatedDropdownFilter),
