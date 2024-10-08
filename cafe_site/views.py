@@ -18,6 +18,7 @@ def contact(request):
             messages.error(request, 'There was an error sending your message.')
     return render(request, 'contact.html')
     form = ContactForm()
+    context = {'form': form}
 
 
 def about(request):
