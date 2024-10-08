@@ -9,3 +9,7 @@ class StaticViewSitemap(sitemaps.Sitemap):
     def items(self):
         return ["cafe_site:home", "cafe_site:about", "cafe_site:contact"]
 
+    def location(self, item):
+        return reverse(item)
+
+
