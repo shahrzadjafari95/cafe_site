@@ -3,6 +3,7 @@ from menu.models import Product, Category
 from django_admin_listfilter_dropdown.filters import RelatedDropdownFilter, DropdownFilter
 from rangefilter.filters import DateRangeFilter
 from django_admin_filters import MultiChoice
+from django_summernote.admin import SummernoteModelAdmin
 
 
 # Register your models here.
