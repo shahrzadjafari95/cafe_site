@@ -49,6 +49,12 @@ SUMMERNOTE_THEME = 'bs4'  # Show summernote with Bootstrap4
 SUMMERNOTE_CONFIG = {
     # Using SummernoteWidget - iframe mode, default
     'iframe': True,
+
+    # You can put custom Summernote settings
+    'summernote': {
+        # As an example, using Summernote Air-mode
+        'airMode': False,
+
 ]
 
 MIDDLEWARE = [
