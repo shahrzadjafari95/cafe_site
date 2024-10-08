@@ -16,9 +16,9 @@ def contact(request):
             messages.success(request, 'Your message has been sent successfully!')
         else:
             messages.error(request, 'There was an error sending your message.')
-    return render(request, 'contact.html')
     form = ContactForm()
     context = {'form': form}
+    return render(request, 'contact.html', context)
 
 
 def about(request):
