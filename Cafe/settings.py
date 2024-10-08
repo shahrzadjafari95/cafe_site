@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'django_extensions',
     'django.contrib.sites',
     'django.contrib.sitemaps',
+    'robots',
 # site map setting
 SITE_ID = 2
 
