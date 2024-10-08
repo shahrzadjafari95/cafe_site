@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rangefilter',
     'django_admin_filters',
     'captcha',
+    'django_summernote',
 
 ]
 
