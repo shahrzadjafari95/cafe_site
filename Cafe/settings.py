@@ -64,6 +64,7 @@ SUMMERNOTE_CONFIG = {
         'toolbar': [
             ['style', ['style']],
             ['font', ['bold', 'underline', 'clear']],
+            ['fontname', ['fontname']],
         ],
     }
 }
