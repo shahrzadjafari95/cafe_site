@@ -19,8 +19,10 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 from cafe_site.sitemaps import StaticViewSitemap
+from  menu.sitemaps import MenuSitemap
 sitemaps = {
     "static": StaticViewSitemap,
+    "menu": MenuSitemap,
 }
 
 urlpatterns = [
