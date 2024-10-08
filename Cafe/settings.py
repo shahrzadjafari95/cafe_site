@@ -62,6 +62,7 @@ SUMMERNOTE_CONFIG = {
         # Toolbar customization
         # https://summernote.org/deep-dive/#custom-toolbar-popover
         'toolbar': [
+            ['style', ['style']],
         ],
     }
 }
