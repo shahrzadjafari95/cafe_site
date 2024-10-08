@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django_admin_filters',
     'captcha',
     'django_summernote',
+    'django_extensions',
 
 # summernote setting
 SUMMERNOTE_THEME = 'bs4'  # Show summernote with Bootstrap4
